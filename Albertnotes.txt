@@ -1,0 +1,137 @@
+AZURE -> MICROSOFT [ CONTAINER ]
+AWS -> AMAZON
+GCP -> GOOGLE
+IBM CLOUD -> IBM
+
+LANGUAGES:
+C
+C++
+PYTHON
+JAVA
+GO
+ANGULAR
+J2EE 
+RUBY
+GRADLE
+GROOVY
+
+COMPILER 
+
+REPOSITORY - TO STORE THE CODING
+
+* APPLICATION - PRODUCT -> COMPONENT 
+
+* ENVIRONMENT - LANE - REGION - SPACE
+	DEV -> Development
+	UAT1 -> User Acceptance Testing
+	UAT2 
+	SIT -> System Integration Testing
+	PRE-PROD -> Pre production [ pre-prod Watsapp in pre-prod App Store ]
+	PROD -> Production [ Watsapp in App Store ]
+
+TempleRun
+Subway Surf
+
+Splunk , Nagios , Zabbix -> Monitoring
+
+Day 2:
+
+CI and CD 
+Who are inventors? -> Developers
+Who are mechanic? -> Operations
+Developers - Business - operations
+Three ways of DevOps:
+	1. One way :  Developers -> Operations
+	2. Two way : Developers -> Operations -> Developers
+	3. Three way : Developers -> Operations ( continuous loop )
+
+MVP
+Daily activities
+
+Day 3:
+
+Backlog -> set of activities stored in pipeline. Developers start their task by taking the stories from Backlog.
+SPRINT -> 2 WEEKS 
+	Testing:
+		Manual Testers [ Quality Acceptance ]
+		Automatic Testers [ selenium ]
+
+SDLC [ SOFTWARE DEVELOPMENT LIFE CYCLE ]
+
+JIRA - TICKETING TOOL:
+	EPIC -> STORY -> TASK -> SUB-TASK
+	EPIC: Implement Poking system in FB
+	STORY : User can / cannot be in the friend's list
+	TASK: Friend logged status
+	Sub-Task: User logged in status
+
+	Acceptance Criteria: Definition of Done
+	Estimation: Story points - Fibonacci series [ 0 , 1d , 1d, 2d,4d,8d ,....]
+
+	
+ AUTOMATION OF DEVOPS:
+
+agile: Culture or practice of managing the requirements of the project [ Eg:It can be done via ticketing system like JIRA ]
+DevOps: Platform for implementing Continuous Integration, Continuous Delivery and Continuous Monitoring
+
+
+
+1. Requirements -> JIRA
+2. Build System -> Maven(Java), Gradle(node) , non-compiled ( python ), Buildcompiler(c) [ Version Control -> GIT ]
+3. Test System -> Manual or automatic
+4. Code Review System -> Sonarqube
+
+* Issue Update -> JIRA
+* Documentation is for Users/other developes/product owners -> Wiki
+
+5. Deploy System -> Ansible
+6. Monitoring -> Nagios
+7. Communication system -> Test mails via mailx, pop, sendmail , mailing services 
+
+
+DAY 4:
+
+Developer 1 -> Unit Test 1..n ->
+Developer 2 -> Unit Test 1..n ->
+Developer 3 -> Unit Test 1..n -> Integrated together and called as Integration testing for an app -> Regression Testing 
+Developer 4 -> Unit Test 1..n ->
+Developer 5 -> Unit Test 1..n ->
+
+Git -> Place where we store the codes
+
+Repo -> branch
+
+Repo = An Application [ E.g. Whatsapp is an application ]
+
+Good things about an project:
+Any project:	
+	1. consider about the camera brand
+	2. lens
+	3. light situation
+	4. Location
+	5. colours
+	6. tripod, memory card - logistics
+	7. Innovation
+
+IT project:
+	1,2,6. Fix the technology language like java, c, c++ , python
+	3. platform - DevOps tools [ quality ]
+	4. Infrastructure Server
+	5. Monitoring
+	7. Documentation , jira boards
+
+	5/7 are qualified - 2 is your backlog -> 10days -> Debt: 10
+
+Standard Intendation:	
+if [ ];
+then
+	{
+	}
+else
+	{
+	}
+
+Wrong Intendation:
+if [ ];
+then	{	} else
+	{	}
