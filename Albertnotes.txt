@@ -136,3 +136,203 @@ if [ ];
 then	{	} else
 	{	}
 	my first commit
+todays note:
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~
+$ pwd
+/c/Users/hp
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~
+$ git clone
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    --reject-shallow      don't clone shallow repository
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    --recursive ...       alias of --recurse-submodules
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+    --also-filter-submodules
+                          apply partial clone filters to submodules
+    --remote-submodules   any cloned submodules will use their remote-tracking branch
+    --sparse              initialize sparse-checkout file to include only files at root
+
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~
+$ git clone
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    --reject-shallow      don't clone shallow repository
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    --recursive ...       alias of --recurse-submodules
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+    --also-filter-submodules
+                          apply partial clone filters to submodules
+    --remote-submodules   any cloned submodules will use their remote-tracking branch
+    --sparse              initialize sparse-checkout file to include only files at root
+
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~
+$ git clone https://github.com/Ganesh0412/test-3.git
+Cloning into 'test-3'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 10 (delta 0), reused 4 (delta 0), pack-reused 0
+Receiving objects: 100% (10/10), 1.04 MiB | 3.97 MiB/s, done.
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~
+$ cd test-3
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~/test-3 (main)
+$ ls-a
+bash: ls-a: command not found
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~/test-3 (main)
+$ ls -a
+./  ../  .git/  Albertnotes.txt  README.md  _PXO6715.jpg  demo.txt
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~/test-3 (main)
+$ cd .git
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~/test-3/.git (GIT_DIR!)
+$ ls
+HEAD  config  description  hooks/  index  info/  logs/  objects/  packed-refs  refs/
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~/test-3/.git (GIT_DIR!)
+$ cd ..
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~/test-3 (main)
+$ ls
+Albertnotes.txt  README.md  _PXO6715.jpg  demo.txt
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~/test-3 (main)
+$ ls -a
+./  ../  .git/  Albertnotes.txt  README.md  _PXO6715.jpg  demo.txt
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~/test-3 (main)
+$ vi Albertnotes.txt
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~/test-3 (main)
+$ git commit
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Albertnotes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~/test-3 (main)
+$ git push
+Everything up-to-date
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~/test-3 (main)
+$ touch thursday.txt
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~/test-3 (main)
+$ ls
+Albertnotes.txt  README.md  _PXO6715.jpg  demo.txt  thursday.txt
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~/test-3 (main)
+$ git add .
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~/test-3 (main)
+$ git commit -a -m "testttt"
+[main 73a4f02] testttt
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 thursday.txt
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~/test-3 (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 337 bytes | 337.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Ganesh0412/test-3.git
+   33ae4ad..73a4f02  main -> main
+
+hp@DESKTOP-4R3PJ6R MINGW64 ~/test-3 (main)
